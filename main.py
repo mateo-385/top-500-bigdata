@@ -14,6 +14,7 @@ def cargar_datos(filepath):
 
 # Función para mostrar datos
 def mostrar_datos(df):
+    df.set_index('puesto', inplace=True)
     st.write(df)
 
 # Función para generar gráfico de barras
